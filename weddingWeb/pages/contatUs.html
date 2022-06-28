@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>חתונמי-צור קשר</title>
+    <meta name="description" content="חתונמי- צור קשר" />
+    <meta name="keywords" content="חתונה" , "צור קשר" , "עזרה עם תכנון חתונה" , "שאלה על חתונה" , "שלח הודעה" />
+    <meta name="author" content="mai tarazi" , "neta lapin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="icon" href="../images/heart-06.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="../styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="../jScripts/jquery-1.12.0.min.js"></script>
+
+
+</head>
+<body>
+    <div id="container">
+        <!--תמונת העמוד + תפריט-->
+        <header id="header_contact">
+            <a href="index.html">
+                <img src="../images/logo-03.png" alt="לוגו אתר חתנומי" id="logo" />
+            </a>
+            <nav id="menu" aria-label="תפריט ניווט ראשי">
+                <ul>
+                    <li><a href="#" class="not_activ">מיקום</a></li>
+                    <li><a href="../pages/decorations.html">קישוטים</a></li>
+                    <li>
+                        <a href="#" class="not_activ">מוזיקה</a>
+                        <ul class="open_menu">
+                            <li><a href="#" class="not_activ">בחירת דיג׳יי</a></li>
+                            <li><a href="../pages/songs.html">שירים לחופה</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="not_activ">בגדים</a>
+                        <ul class="open_menu">
+                            <li><a href="#" class="not_activ">שמלה</a></li>
+                            <li><a href="#" class="not_activ">חליפה</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="not_activ">אוכל ושתיה</a>
+                        <ul class="open_menu">
+                            <li><a href="#" class="not_activ">קייטרינג</a></li>
+                            <li><a href="#" class="not_activ">אלכוהול</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!--פסקת הצגת העמוד-->
+            <div id="welcome">
+                <h1>יש לכם שאלה או בקשה?</h1>
+                <h2>אנחנו פה בשבילכם</h2>
+                <img src="../images/index/arrow-04.png" alt="חץ למטה" />
+            </div>
+        </header>
+
+        <main>
+            <!--טופס צור קשר-->
+            <form>
+                <h2>צור קשר</h2>
+                <input type="hidden" id="myEmail" value="hatunami@gmail.com" />
+                <label for="user_name">
+                    <h3>שם מלא*:</h3>
+                    <input type="text" id="user_name" placeholder="שם מלא" required />
+                </label>
+                <fieldset>
+                    <legend><h3>מגדר:</h3></legend>
+                    <label for="male"><input type="radio" name="gender" /> זכר</label>
+                    <label for="female"><input type="radio" name="gender" /> נקבה</label>
+                    <label for="other"><input type="radio" name="gender" /> אחר</label>
+                </fieldset>
+                <label for="user_tel">
+                    <h3>מספר טלפון*:</h3>
+                    <input type="tel" id="user_tel" placeholder="מספר טלפון" required />
+                </label>
+                <label for="wedding_date">
+                    <h3>מתי מתחתנים?</h3>
+                    <input type="date" id="wedding_date" />
+                </label>
+                <label for="user_ques">
+                    <h3>מה השאלה?*</h3>
+                    <!--מקום לכתיבת הודעה-->
+                    <textarea id="user_ques" rows="5" cols="33" required>היי חתונמי! רצינו לשאול בקשר ל...</textarea>
+                </label>
+                <br />
+                <label for="send"><input id="submit_form" type="submit" value="שלח" /></label>
+            </form>
+        </main>
+        <!--תפריט ניווט תחתון-footer-->
+        <footer>
+            <ul>
+                <li><a href="../pages/contatUs.html">צור קשר</a></li>
+                <li><a href="../pages/about.html">אודות</a></li>
+                <li><a href="../pages/siteMap.html">מפת האתר</a></li>
+            </ul>
+            <p>חתונמי 2022</p>
+            <p>נוצר ע״י מאי תרזי ונטע לפין</p>
+        </footer>
+
+    </div>
+</body>
+</html>

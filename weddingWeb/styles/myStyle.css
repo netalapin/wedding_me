@@ -1,0 +1,537 @@
+﻿
+/* assistant-regular - hebrew */
+@font-face {
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/assistant-v16-hebrew-regular.eot'); /* IE9 Compat Modes */
+    src: local(''), url('../fonts/assistant-v16-hebrew-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/assistant-v16-hebrew-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/assistant-v16-hebrew-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/assistant-v16-hebrew-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/assistant-v16-hebrew-regular.svg#Assistant') format('svg'); /* Legacy iOS */
+}
+/* assistant-700 - hebrew */
+@font-face {
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/assistant-v16-hebrew-700.eot'); /* IE9 Compat Modes */
+    src: local(''), url('../fonts/assistant-v16-hebrew-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/assistant-v16-hebrew-700.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/assistant-v16-hebrew-700.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/assistant-v16-hebrew-700.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/assistant-v16-hebrew-700.svg#Assistant') format('svg'); /* Legacy iOS */
+}
+/*הגדרות חוזרות על עצמן בכל האתר*/
+body {
+    direction: rtl;
+    font-family: 'Assistant';
+    width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+display: inline-block;
+width: 100%;
+height:auto;
+background-size: cover;
+position: relative;
+background-position: -50px, 0px;
+}
+
+h1 {
+    font-size: 2.5vw;
+}
+h2 {
+    font-size: 2vw;
+}
+h3 {
+font-weight: normal;
+font-size: 1.8vw;
+}
+
+section>div {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-size: 1.5vw;
+    padding-top: 15px;
+}
+
+/*שינוי תמונת הרקע לפתיח של כל עמוד*/
+#header_index { 
+background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6)), url("../images/index/background2.jpeg");
+}
+
+#header_about {
+background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)), url("../images/about/about.jpeg");
+}
+
+#header_decorations {
+background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)), url("../images/decorations/decor.jpg");
+}
+
+#header_songs {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)), url("../images/songs/chuppa.jpeg");
+}
+
+#header_contact, #header_map {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)), url("../images/contact/background3.jpeg");
+}
+
+#logo { /*תמונת הלוגו*/
+    width: 15%;
+    height: auto;
+    display: inline-block;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+/*ניהול התפריט*/
+nav#menu { /*כל התפריט*/
+    display: inline-block;
+    position: absolute;
+    align-items: center;
+}
+
+#menu ul { /*כל רשימה בתוך התפריט*/
+list-style: none;
+margin: 0 auto;
+padding: 0;
+}
+
+nav#menu ul li { /*כל שורה של הרשימה*/
+    display: inline-block;
+    width: 150px;
+}
+
+nav#menu>ul>li>a { /*קישור חיצוני*/
+    margin-top: 20px;
+}
+
+#menu li>a { /*כל קישור*/
+display: block;
+    color: black;
+text-decoration: none;
+text-align: center;
+font-size: 1.7vw;
+font-weight: lighter;
+}
+
+#menu li>a:hover {
+font-weight: bold;
+font-size: 1.85vw;
+}
+
+.open_menu a { /*הקישורים הפנימיים*/
+    display: block; 
+    width: 150px;
+margin-top: 10px;
+}
+
+ul.open_menu { /*ul פנימי*/
+    display: none;
+    position: absolute;
+}
+
+.open_menu li { /*li פנימי*/
+    display: block;
+    float: none;
+}
+
+#menu ul li:hover ul{
+display: block;
+width: 120px;
+}
+
+/**/
+a.not_activ {
+cursor: not-allowed;
+}
+
+/*תפריט פירורי לחם*/
+nav#breads ol li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav#breads ol li:after {
+content: " > ";
+}
+nav#breads ol li:last-child:after {
+    content: "";
+}
+
+nav#breads li a{
+color: #000000;
+}
+
+/*פוטר חוזר על עצמו בכל עמוד*/
+footer ul li {
+    display: inline-block;
+    position: relative;
+}
+footer ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5vw;
+    padding:10px;
+}
+footer {
+    text-align: center;
+    background-color: #EFE6C9;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+footer ul li a:hover {
+font-weight: bold;
+}
+
+/*כיתוב מעל התמונה בפתיח העמוד*/
+#welcome h2 {
+text-align: center;
+font-weight: normal;
+  }
+
+#welcome h1 {
+margin-top: 100px;
+text-align: center;
+font-weight: bolder;
+}
+
+  #welcome img {
+    height: auto;
+    width: 7%;
+    margin-right: 46.5%;
+}
+
+#welcome p {
+    padding-right: 20px;
+    padding-top: 240px;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+#info h3 {
+    font-weight: bold;
+}
+
+/*טאבים לדף הבית*/
+section#tabs div {
+    display: inline-block;
+    width: 253.2px;
+    height: 50px;    
+    position: static;
+}
+
+#tabs>div>a {
+    text-decoration: none;
+    color: #000000; 
+}
+#tabs>div>a:hover {
+    font-weight: bold;
+}
+
+/*הסבר על העמודים - דף בית*/
+/*טאבים*/
+#sub1, #sub4 { 
+    background-color: #DFDAED;
+    border-bottom: 0.5px solid black;
+}
+
+#sub2, #sub5 {
+    background-color: #FBF9F2;
+    border-bottom: 0.5px solid black;
+}
+
+#sub3 {
+    background-color: #EFE6C9;
+    border-bottom: 0.5px solid black;
+}
+
+/*הסבר על כל עמוד*/
+section#info>div {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+#info div>a { /*כפתור מעבר לעמוד*/
+    color: #000000;
+    text-decoration: none;
+    border: 1.5px solid black;
+    padding: 5px;
+}
+#info div>a:hover {
+    border: 2.5px solid black;
+    font-weight: bold;
+}
+/*הסבר על כל עמוד*/
+#place, #clothes {
+    background-color: #DFDAED;
+}
+
+#decoration, #food {
+    background-color: #FBF9F2;
+}
+
+#music {
+    background-color: #EFE6C9;  
+}
+
+/*עמוד אודות*/
+section#odot div, form{ /*להחיל את העיצוב על צור קשר*/
+    background-color: #FBF9F2;
+    text-align: right;
+    padding-right: 40px;
+}
+
+section#odot ul{
+    list-style: none;
+}
+
+section#odot img {
+    height: auto;
+    width: 15%;
+}
+
+section#odot a:hover {
+font-weight: bold;
+}
+
+/*עמודים פנימיים*/
+
+.options img { /*תמונות למיני תפריט*/
+    height: auto;
+    width: 60%;
+    padding-bottom: 20px;
+}
+
+.options a:hover>img {
+opacity: 0.5;
+}
+/*יצירת מיני תפריט*/
+.options span{ 
+    display: inline-block;
+    width: 30%;
+    height: auto;
+}
+
+.options {
+background-color: #DFDAED;
+}
+
+/*חלוקת העמוד לקטעים- עיצוב זהה לכל קטע*/
+.first {
+    background-color: #FBF9F2;
+    border-bottom: 1px solid black;
+}
+/*שני חלקים אחד ליד השני מורכבים מתמונה וטקסט*/
+.first span{
+    display: inline-block;
+    width: 49%;
+    height: auto;    
+    margin: 0px;
+    padding: 0px;
+    padding-top: 15px;
+}
+.left_span {
+    float: left;
+}
+
+.first img {
+    height: auto;
+    width: 40%; 
+    float: right
+}
+
+.first span>p {
+    height: 192px;
+    width: 248px;
+clear: left;
+margin-right: 48%;
+    background-color: #EFE6C9;
+    margin-top: 0px;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+/*טופס צור קשר*/
+form h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.5vw;
+}
+
+form {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 1.2vw;
+}
+
+form fieldset label{
+display: block;
+}
+
+form fieldset {
+    border: 0px;
+    padding: 0px;
+}
+
+/*מפת האתר*/
+#site_map li>a { /*כל קישור*/
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.7vw;
+    }
+
+#site_map li>a:hover {
+    font-weight: bold;
+    font-size: 1.85vw;
+}
+
+#site_map li {
+    list-style: none;
+}
+#site_map li:first-child { /*הראשון ברשימה הוא כותרת*/
+    font-weight: bold;
+    list-style-image: url("../images/heart-09.png");
+}
+    
+#site_map ul {
+    display: block;
+    margin-right: 20px;
+}
+
+#site_map .not_activ { /*קישורים לא פעילים*/
+color: grey;
+}
+#site_map section {
+    background-color: #FBF9F2;
+    padding: 15px;
+}
+
+/* גלריית תמונות */
+.gallery * {
+    box-sizing: border-box;
+}
+  
+.gallery img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .gallery {
+    position: relative;
+    width: 70%;
+    height: auto;
+    right: 15%; 
+    margin-bottom: 30px; 
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .mini_img {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    /* margin-top: -50px; */
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    font-size: 35px;
+}
+  
+  /* Number text (1/3 etc) */
+  .number_img {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-gallery {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+    font-size: 1.5vw;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: right;
+    width: 16.66%;
+    
+  }
+  
+  /* Add a transparency effect for thumnbail images */  
+  .active,
+  .mini_img:hover {
+    opacity: 1;
+  }
+
+/*size of images*/
+  .mySlides {
+width: 100%;
+height: auto;
+  }
+  
+  .mySlides img{
+    width: 100%;
+    height: auto;
+  }
+
+  .mini_img {
+    width: 100%;
+    height: auto;
+  } 
+
+.number_img {
+    background-color: rgba(0, 0, 0, 0.8);
+font-size: 25px;
+}
+
+#gallery_title {
+    text-align: center;
+}
+
